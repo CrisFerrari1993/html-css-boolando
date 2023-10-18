@@ -44,6 +44,7 @@
 .row {
     display: flex;
     margin-bottom: 20px;
+    padding: 0% 10%;
     /* background-color: aqua;
     border: 1px solid black */
 }
@@ -82,6 +83,9 @@
     position: absolute;
     bottom: 100px;
     left:60px;
+}
+.sostenibilita.sola{
+    left: 10px;
 }
 .label {
     position: absolute;
