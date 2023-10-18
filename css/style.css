@@ -37,7 +37,7 @@
     list-style: none;
 }
 .nav_logo img {
-    max-height: 30px;
+    max-height: 50px;
     width: auto;
 }
 /* main rules */
@@ -68,7 +68,10 @@ main {
     cursor: pointer;
 }
 .col_img img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 100px;
+    max-height: 100%;
+    min-height: 100px;
 }
 .hover {
     display: none;
