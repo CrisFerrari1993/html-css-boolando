@@ -7,3 +7,43 @@
 :root {
     font-family: 'Roboto', sans-serif;
 }
+
+.navbar {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left:0;
+    right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1% 5% 1% 5%;
+    align-items: center;
+    background-color: rgb(255, 134, 22);
+    width: 100vw;
+    height: auto;
+    color: white;
+    box-shadow: 0px 2px  rgba(0, 0, 0, 0.2);
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar li:hover {
+    cursor: pointer;
+    text-decoration: underline 3px solid white;
+}
+.navbar li {
+    padding: 5%;
+    list-style: none;
+}
+.nav_logo img {
+    max-height: 30px;
+    width: auto;
+}
+
+main {
+    /* debug */
+    margin-top: 60px;
+}
