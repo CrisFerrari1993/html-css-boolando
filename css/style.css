@@ -41,6 +41,10 @@
     width: auto;
 }
 /* main rules */
+main {
+    /* debug */
+    margin-top: 60px;
+}
 .row {
     display: flex;
     margin-bottom: 70px;
@@ -129,7 +133,29 @@
     color: red;
     z-index: 2;
 }
-main {
-    /* debug */
-    margin-top: 60px;
+/* footer rules */
+footer section {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    padding: 1% 10% 1% 10%;
+    border-bottom: 2px solid white;
+}
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer li {
+    margin-right: 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    font-size: small;
 }
