@@ -18,10 +18,10 @@
     align-items: center;
     background-color: rgb(255, 134, 22);
     width: 100vw;
-    height: auto;
+    height: 80px;
     color: white;
     box-shadow: 0px 2px  rgba(0, 0, 0, 0.2);
-    padding: 1% 5% 1% 5%;
+    padding: 1% 10%;
 }
 .navbar ul {
     display: flex;
@@ -43,7 +43,7 @@
 /* main rules */
 .row {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     padding: 0% 10%;
     /* background-color: aqua;
     border: 1px solid black */
@@ -59,18 +59,35 @@
 }
 .col_img {
     position: relative;
+    margin-top: 20px;
+    position: relative;
     cursor: pointer;
 }
 .col_img img {
     width: 100%;
 }
+.hover {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.col_img:hover .hover {
+    display:inline-block;
+}
+
 .col_img .fa-heart {
     padding: 10px;
     font-size: 50px;
     position: absolute;
-    top: 10px;
+    top: 5%;
     right: 0px;
     background-color: white;
+    z-index: 2;
 }
 .fa-heart:hover{
     color: red;
@@ -81,20 +98,25 @@
     font-weight: 600;
     color: white;
     position: absolute;
-    bottom: 100px;
-    left:60px;
+    bottom: 3%;
+    left:50px;
+    z-index: 2;
+
 }
 .sostenibilita.sola{
-    left: 10px;
+    left: 0%;
+    z-index: 2;
 }
 .label {
     position: absolute;
-    bottom: 100px;
-    left: 10px;
+    display: flex;
+    bottom: 3%;
+    left:0px;
     padding: 5px;
     background-color: red;
     color: white;
     font-weight: 600;
+    z-index: 2;
 }
 .col_description p {
     font-weight: 200;
@@ -105,6 +127,7 @@
 .price {
     font-weight: 600;
     color: red;
+    z-index: 2;
 }
 main {
     /* debug */
